@@ -7,7 +7,7 @@ export default function AboutPage() {
    {/* <h1 className=' text-4xl pb-5 font-bold'>About the Quotes</h1> */}
  
 <div className='bg-white shadow-md p-5 rounded-lg py-6 '>
-    <h3 className='text-2xl mb-5'>
+    <h3 className='text-4xl mb-5'>
         the Quotes media (Version 1.0.0)
     </h3>
     <p>
