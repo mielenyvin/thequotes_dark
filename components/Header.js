@@ -13,6 +13,8 @@ export default function Header() {
 <div className='hidden bg-qte'></div>
 <div className='hidden bg-qorange'></div>
 
+
+
 <div className='container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center'>
 <Link href='/'>
     <a className='flex md:w-1/5 title-font font-medium items-center md:justify-start mt-3 

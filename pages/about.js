@@ -2,9 +2,10 @@ import Layout from '@/components/Layout'
 
 export default function AboutPage() {
     return (
-        <Layout title='About the Quotes'>
-   <h1 className='text-4xl pb-5 font-bold'>About the Quotes</h1>
-
+<Layout title='About the Quotes' >
+  
+   {/* <h1 className=' text-4xl pb-5 font-bold'>About the Quotes</h1> */}
+ 
 <div className='bg-white shadow-md p-5 rounded-lg py-6 '>
     <h3 className='text-2xl mb-5'>
         the Quotes media (Version 1.0.0)

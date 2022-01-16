@@ -24,12 +24,19 @@ export default function Layout({title, keywords, desciprtion, children, categori
 
             <Header />
 
+
+
+<div className='bg-qlitegray sm:rounded-2xl container mx-auto flex flex-wrap p-5 flex-col'>
+<CategoryList categories={categories} />
+</div>
+
+<div className='pb-0 sm:pb-5'></div>
+
             {(router.pathname === '/' || router.pathname === '/about' || router.pathname === '/news/category' || router.pathname === '/news/search') && <Showcase />}
             
-<div className='mb-auto mx-0 md:mx-5  lg:mx-16 xl:mx-16  2xl:mx-52 mt-0 pt-0 pb-20 md:rounded-2xl bg-qveryverylitegray'>
+<div className='mb-auto mx-auto mt-0 pt-0 pb-20 sm:rounded-2xl bg-qlitegray'>
 <main className='mb-auto container mx-auto px-5'>
-<div className='my-10'>
-<CategoryList categories={categories} />
+<div className='my-5'>
 </div>
 <div className=''>
 {children}

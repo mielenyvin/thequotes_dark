@@ -11,14 +11,16 @@ export default function NewsItemFeatured( {nw} ) {
 
 <Link href={`/news/${nw.slug}`}>
  
-<div id="newsarticlefeatured" className='p-0.5 container mx-auto flex flex-wrap flex-col sm:flex-col md:flex-row items-stretch
- bg-gradient-to-l from-qgrey via-qgrey to-qgrey cursor-pointer rounded-lg mb-5 ' >
+{/* from-qgreydark via-qgreydark to-qgreydark */}
+
+<div id="newsarticlefeatured" className='p-0 container mx-auto flex flex-wrap flex-col sm:flex-col md:flex-row items-stretch bg-gradient-to-l cursor-pointer 
+rounded-xl mb-5' >
 
 <div id="newsarticlefeatured" className='container mx-auto flex flex-wrap flex-col sm:flex-col md:flex-row items-stretch
- bg-white  cursor-pointer rounded-l-xl rounded-r-lg  shadow-md hover:shadow-lg' >
+ bg-white  cursor-pointer rounded-l-2xl rounded-r-xl  shadow-md hover:shadow-lg' >
           
 <div className=' w-4/12 title-font font-medium items-center md:justify-start mt-0 sm:mt-0 mb-0 md:mb-0'>
-    <img src={nw.image ? nw.image.url : '/images/event-default.png'} className='rounded-l-lg h-full w-full' 
+    <img src={nw.image ? nw.image.url : '/images/event-default.png'} className='rounded-l-xl h-full w-full' 
  />
 </div>
     
@@ -30,7 +32,7 @@ export default function NewsItemFeatured( {nw} ) {
     </div>     
 
             <divider className='border-metal'>
-                <div className='px-4 leading-5 pb-2 pt-1   text-black font-normal text-lg rounded-2xl'>Versus</div></divider>
+                <div className='px-4 leading-5 pb-2 pt-1   text-black font-normal text-lg rounded-3xl'>Versus</div></divider>
 
     <div className='mx-8 mb-5 xl:mb-6 2xl:mb-8' ><div className='flex items-center '>{nw.image && (<img className='border p-1 border-qblue' src={nw.media_2_logo.url} width={80} height={80} /> ) }  
         <span className='ml-4 text-qblue sm:text-sm 2xl:text-xl text-md font-bold'>{nw.title2}</span>
@@ -39,7 +41,7 @@ export default function NewsItemFeatured( {nw} ) {
 </div>
 
 
-<div className='bg-white border-l border-qblue rounded-r-lg w-2/12 flex flex-col justify-center items-center'>
+<div className='bg-white border-l border-qblue rounded-r-xl w-2/12 flex flex-col justify-center items-center'>
     <div className = 'my-4 flex flex-row items-center '>
             <div className='pr-1 mb-1'><FaRegStar /></div>
             <div className='pb-1  font-bold'>Featured article</div>

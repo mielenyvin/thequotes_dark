@@ -25,7 +25,7 @@ module.exports = {
         'qorange': '#dc2f02',
         'qgreen': '#76c893',
         'qviolet': '#cbb2fe',
-        'qlitegray': '#e0e1dd',
+        'qlitegray': '#f5f5f5',
         'qverylitegray': '#fafafa',
         'qveryverylitegray' :'#fdfdfd'
       },
