@@ -31,7 +31,7 @@ export default function Layout({title, keywords, desciprtion, children, categori
 </div>
 </div>
 
-<div className='pb-0 sm:pb-5'></div>
+<div className='pb-5'></div>
 
 {/* {(router.pathname === '/' || router.pathname === '/about' || router.pathname === '/news/category' || router.pathname === '/news/search') && <Showcase />} */}
             
@@ -54,9 +54,9 @@ export default function Layout({title, keywords, desciprtion, children, categori
 
 {(router.pathname === '/' || (router.pathname != '/about' && router.pathname != '/news/category' && router.pathname != '/news/search')  ) && 
 <div className=' sm:mx-6'>
-<div className='bg-qlitegray sm:rounded-2xl container mx-auto flex flex-wrap p-5 flex-col '>
+<div className='bg-qlitegray sm:rounded-2xl container mx-auto flex flex-wrap pt-5 p-5 flex-col '>
 <main className='mb-auto container mx-auto sm:px-5'>
-<div className='mt-5'></div><div className=''>{children}</div>
+<div className='sm:mt-5'></div><div className=''>{children}</div>
 <div className='mt-5'></div></main></div></div>}
        
        
