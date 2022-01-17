@@ -31,7 +31,7 @@ export default function Layout({title, keywords, desciprtion, children, categori
 </div>
 </div>
 
-<div className='pb-0 sm:pb-0'></div>
+<div className='pb-0 sm:pb-5'></div>
 
 {/* {(router.pathname === '/' || router.pathname === '/about' || router.pathname === '/news/category' || router.pathname === '/news/search') && <Showcase />} */}
             
