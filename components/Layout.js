@@ -50,7 +50,7 @@ export default function Layout({title, keywords, desciprtion, children, categori
 <div className='mt-5'></div>
 </main>
 </div>
-</div>}
+</div>
 
 
        
@@ -60,7 +60,7 @@ export default function Layout({title, keywords, desciprtion, children, categori
 </div>
 </div>
     )
-
+}
 
 Layout.defaultProps = {
     title: 'the Quotes News | Find the truth',
