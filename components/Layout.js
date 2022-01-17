@@ -60,7 +60,7 @@ export default function Layout({title, keywords, desciprtion, children, categori
 </div>
 </div>
     )
-}
+
 
 Layout.defaultProps = {
     title: 'the Quotes News | Find the truth',
