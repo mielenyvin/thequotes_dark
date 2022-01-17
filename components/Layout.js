@@ -25,13 +25,13 @@ export default function Layout({title, keywords, desciprtion, children, categori
             <Header />
 
 <div className='sm:mx-6'>
-<div className='bg-qgrey sm:bg-qlitegray sm:rounded-2xl container mx-auto flex flex-wrap p-5 flex-col '>
+<div className='bg-qgrey sm:bg-qlitegray sm:rounded-2xl container mx-auto flex flex-wrap p-0 flex-col '>
 
 <CategoryList categories={categories} />
 </div>
 </div>
 
-<div className='pb-0 sm:pb-5'></div>
+<div className='pb-0 sm:pb-0'></div>
 
 {/* {(router.pathname === '/' || router.pathname === '/about' || router.pathname === '/news/category' || router.pathname === '/news/search') && <Showcase />} */}
             
