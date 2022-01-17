@@ -43,7 +43,7 @@ export default function Layout({title, keywords, desciprtion, children, categori
 <div className='hidden 2xl:block text-white '>2xl</div>
 </div> */}
 
-<div className='sm:mx-6 sm:h-(screen-8)  mb-auto'> 
+<div className='sm:mx-6 sm:h-(screen-12)  mb-auto'>
 <div className='bg-qlitegray sm:rounded-2xl container mx-auto flex flex-wrap p-5 flex-col '>
 <main className='mb-auto container mx-auto sm:px-5'><div className='mt-5'></div>
 <div className=''>{children}</div>
@@ -55,7 +55,7 @@ export default function Layout({title, keywords, desciprtion, children, categori
 
        
        
-<div className='pb-5'>
+<div className='pt-2 pb-5'>
  <Footer />
 </div>
 </div>
