@@ -25,7 +25,7 @@ export default function Layout({title, keywords, desciprtion, children, categori
 
             <Header />
             
-            <div className='my-10'>
+<div className='bg-qgrey sm:bg-qlitegray sm:rounded-2xl container mx-auto p-0'>
 <CategoryList categories={categories} />
 </div>
 
