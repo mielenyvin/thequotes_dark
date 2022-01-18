@@ -25,23 +25,16 @@ export default function Layout({title, keywords, desciprtion, children, categori
 
             <Header />
             
-<div className='sm:mx-6'>
-<div className='bg-qgrey sm:bg-qlitegray sm:rounded-2xl container mx-auto flex flex-wrap p-0 flex-col '>
+            <div className='my-10'>
 <CategoryList categories={categories} />
 </div>
-</div>
-
-
-
 
 <div className='pb-0 sm:pb-5'></div>
 <div className='sm:mx-6 sm:h-(screen-12)  mb-auto'>
 <div className='bg-qlitegray sm:rounded-2xl container mx-auto flex flex-wrap p-5 flex-col '>
     
 <main className='mb-auto container mx-auto px-5'>
-<div className='my-10'>
-<CategoryList categories={categories} />
-</div>
+
 <div className=''>
 {children}
 </div>
