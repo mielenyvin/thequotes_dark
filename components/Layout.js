@@ -9,7 +9,7 @@ export default function Layout({title, keywords, desciprtion, children, categori
     const router = useRouter()
 
     return (
-        <div className="flex flex-col h-screen  bg-qblue">
+        <div className="flex flex-col h-screen justify-between  bg-qblue">
             
             <Head>
                 <title>{title}</title>
@@ -24,22 +24,12 @@ export default function Layout({title, keywords, desciprtion, children, categori
 
             <Header />
 
-<div className='sm:mx-6'>
-<div className='bg-qlitegray sm:rounded-2xl container mx-auto flex flex-wrap p-5 flex-col '>
-
-<CategoryList categories={categories} />
-</div>
-</div>
-
-{/* <div className='pb-0 sm:pb-5'></div> */}
-
             {(router.pathname === '/' || router.pathname === '/about' || router.pathname === '/news/category' || router.pathname === '/news/search') && <Showcase />}
             
-            <div className='sm:mx-6'>
- 
-            <div className='bg-qlitegray sm:rounded-2xl container mx-auto flex flex-wrap p-5 flex-col '>
+<div className='mb-auto mx-0 md:mx-5  lg:mx-16 xl:mx-16  2xl:mx-52 mt-0 pt-0 pb-20 md:rounded-2xl bg-qveryverylitegray'>
 <main className='mb-auto container mx-auto px-5'>
-<div className='my-5'>
+<div className='my-10'>
+<CategoryList categories={categories} />
 </div>
 <div className=''>
 {children}
@@ -47,7 +37,7 @@ export default function Layout({title, keywords, desciprtion, children, categori
 </main>
 
 </div>
-</div>
+
 <div className='py-5'>
 <Footer />
 </div>
