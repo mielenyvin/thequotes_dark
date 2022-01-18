@@ -25,8 +25,9 @@ export default function Layout({title, keywords, desciprtion, children, categori
 
             <Header />
 
-<div className='mx-6'>       
-<div className='bg-qgrey sm:bg-qlitegray sm:rounded-2xl container mx-auto p-0 '>
+
+<div className='sm:mx-6'>       
+<div className='bg-qgrey sm:bg-qlitegray sm:rounded-2xl container mx-auto flex p-0 flex-col '>
 <CategoryList categories={categories} />
 </div></div>
 
