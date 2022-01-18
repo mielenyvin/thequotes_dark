@@ -2,14 +2,14 @@ import Head from 'next/head'
 import {useRouter} from 'next/router'
 import Header from './Header'
 import Footer from './Footer'
-// import Showcase from './Showcase'
+import Showcase from './Showcase'
 import CategoryList from '@/components/CategoryList'
 
 export default function Layout({title, keywords, desciprtion, children, categories}) {
     const router = useRouter()
 
     return (
-        <div className="flex flex-col h-screen justify-start  bg-qblue">
+        <div className="flex flex-col h-screen  bg-qblue">
             
             <Head>
                 <title>{title}</title>
@@ -31,26 +31,23 @@ export default function Layout({title, keywords, desciprtion, children, categori
 </div>
 </div>
 
-<div className='pb-0 sm:pb-5'></div>
+{/* <div className='pb-0 sm:pb-5'></div> */}
 
-{/* {(router.pathname === '/' || router.pathname === '/about' || router.pathname === '/news/category' || router.pathname === '/news/search') && <Showcase />} */}
+            {(router.pathname === '/' || router.pathname === '/about' || router.pathname === '/news/category' || router.pathname === '/news/search') && <Showcase />}
             
-{(router.pathname === '/about' || router.pathname === '/news/category' || router.pathname === '/news/search' ) && <div className='sm:mx-6 h-screen'> 
-<div className='bg-qlitegray sm:rounded-2xl container mx-auto flex flex-wrap p-5 flex-col '>
-<main className='mb-auto container mx-auto px-5'><div className='mt-5'></div>
-<div className=''>{children}</div>
-<div className='mt-5'></div>
-</main>
-</div>
-</div>}
-
-{(router.pathname === '/'   ) && 
-<div className='sm:mx-6'>
-<div className='bg-qlitegray sm:rounded-2xl container mx-auto flex flex-wrap p-5 flex-col '>
+            <div className='sm:mx-6'>
+ 
+            <div className='bg-qlitegray sm:rounded-2xl container mx-auto flex flex-wrap p-5 flex-col '>
 <main className='mb-auto container mx-auto px-5'>
-<div className='mt-5'></div><div className=''>{children}</div>
-<div className='mt-5'></div></main></div></div>}
-       
+<div className='my-5'>
+</div>
+<div className=''>
+{children}
+</div>
+</main>
+
+</div>
+</div>
 <div className='py-5'>
 <Footer />
 </div>
