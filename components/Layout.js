@@ -32,16 +32,13 @@ export default function Layout({title, keywords, desciprtion, children, categori
 <div className='pb-0 sm:pb-5'></div>
 <div className='sm:mx-6 sm:h-(screen-12)  mb-auto'>
 <div className='bg-qlitegray sm:rounded-2xl container mx-auto flex flex-wrap p-5 flex-col '>
-    
-<main className='mb-auto container mx-auto px-5'>
-
-<div className=''>
-{children}
-</div>
+<main className='mb-auto container mx-auto sm:px-5'><div className='mt-5'></div>
+<div className=''>{children}</div>
+<div className='mt-5'></div>
 </main>
+</div>
+</div>
 
-</div>
-</div>
 
 
 
