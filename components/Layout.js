@@ -24,10 +24,11 @@ export default function Layout({title, keywords, desciprtion, children, categori
             </Head>
 
             <Header />
-            
-<div className='bg-qgrey sm:bg-qlitegray sm:rounded-2xl container mx-auto p-0'>
+
+<div className='mx-6'>       
+<div className='bg-qgrey sm:bg-qlitegray sm:rounded-2xl container mx-auto p-0 '>
 <CategoryList categories={categories} />
-</div>
+</div></div>
 
 <div className='pb-0 sm:pb-5'></div>
 <div className='sm:mx-6 sm:h-(screen-12)  mb-auto'>
