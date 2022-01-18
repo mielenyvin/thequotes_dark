@@ -8,7 +8,7 @@ export default function AboutPage() {
  
 <div className='bg-white shadow-md p-5 rounded-lg py-6 '>
     <h3 className='text-4xl mb-5'>
-        the Quotes media (Version 1.0.2)
+        the Quotes media (Version 1.1.0)
     </h3>
     <p>
 This project comes as a response to the ever present and sometimes blatant media bias. </p>
