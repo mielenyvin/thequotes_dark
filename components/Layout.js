@@ -2,14 +2,14 @@ import Head from 'next/head'
 import {useRouter} from 'next/router'
 import Header from './Header'
 import Footer from './Footer'
-import Showcase from './Showcase'
+//import Showcase from './Showcase'
 import CategoryList from '@/components/CategoryList'
 
 export default function Layout({title, keywords, desciprtion, children, categories}) {
     const router = useRouter()
 
     return (
-        <div className="flex flex-col h-screen justify-between  bg-qblue">
+        <div className="flex flex-col h-screen justify-start  bg-qblue">
             
             <Head>
                 <title>{title}</title>
@@ -23,8 +23,6 @@ export default function Layout({title, keywords, desciprtion, children, categori
             </Head>
 
             <Header />
-
-            {(router.pathname === '/' || router.pathname === '/about' || router.pathname === '/news/category' || router.pathname === '/news/search') && <Showcase />}
             
 <div className='mb-auto mx-0 md:mx-5  lg:mx-16 xl:mx-16  2xl:mx-52 mt-0 pt-0 pb-20 md:rounded-2xl bg-qveryverylitegray'>
 <main className='mb-auto container mx-auto px-5'>
