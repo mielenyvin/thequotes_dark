@@ -1,8 +1,9 @@
+
 import Head from 'next/head'
 import {useRouter} from 'next/router'
 import Header from './Header'
 import Footer from './Footer'
-//import Showcase from './Showcase'
+// import Showcase from './Showcase'
 import CategoryList from '@/components/CategoryList'
 
 export default function Layout({title, keywords, desciprtion, children, categories}) {
@@ -24,7 +25,10 @@ export default function Layout({title, keywords, desciprtion, children, categori
 
             <Header />
             
-<div className='mb-auto mx-0 md:mx-5  lg:mx-16 xl:mx-16  2xl:mx-52 mt-0 pt-0 pb-20 md:rounded-2xl bg-qveryverylitegray'>
+
+<div className='pb-0 sm:pb-5'></div>
+<div className='sm:mx-6 sm:h-(screen-12)  mb-auto'>
+<div className='bg-qlitegray sm:rounded-2xl container mx-auto flex flex-wrap p-5 flex-col '>
 <main className='mb-auto container mx-auto px-5'>
 <div className='my-10'>
 <CategoryList categories={categories} />
@@ -35,9 +39,15 @@ export default function Layout({title, keywords, desciprtion, children, categori
 </main>
 
 </div>
+</div>
 
-<div className='py-5'>
-<Footer />
+
+
+
+
+
+<div className='pt-2 pb-5'>
+ <Footer />
 </div>
 </div>
     )
