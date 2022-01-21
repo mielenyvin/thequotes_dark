@@ -5,7 +5,7 @@ import Layout from '@/components/Layout'
 
 export default function NotFoundPage() {
     return (
-        <Layout title='Page Not Founnd'>
+        <Layout title='Page Not Found'>
             {/* <div className={styles.error}> */}
             <div className='flex flex-col items-center mt-20'>
                 <Image src='/images/logo.png' width={70} height={70} className='' alt=''/>

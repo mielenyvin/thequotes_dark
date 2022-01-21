@@ -61,10 +61,7 @@ export default function NewsPage({nw}) {
 <span>Publicated on: {new Date(nw.media2_date).toLocaleDateString('en-GB', options)} </span>
 </div>
 
-
-
 <h1 className='text-2xl pb-5'>{nw.media2_name}: &#8221;{nw.title2}&#8221;</h1>
-
 
 <div dangerouslySetInnerHTML={{__html: marked(nw.Media2_text)}}></div>
 

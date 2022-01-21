@@ -20,7 +20,7 @@ rounded-xl mb-5' >
  bg-white  cursor-pointer rounded-l-2xl rounded-r-xl  shadow-md hover:shadow-lg' >
           
 <div className=' w-4/12 title-font font-medium items-center md:justify-start mt-0 sm:mt-0 mb-0 md:mb-0'>
-    <img src={nw.image ? nw.image.url : '/images/event-default.png'} className='rounded-l-xl h-full w-full' 
+    <img src={nw.image ? nw.image.url : '/images/news-default.png'} className='rounded-l-xl h-full w-full' 
  />
 </div>
     

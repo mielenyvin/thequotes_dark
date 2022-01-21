@@ -8,7 +8,7 @@ export default function NewsItem( {nw} ) {
 
 <div id="newsarticle" className='cursor-pointer h-full w-full bg-white rounded-lg shadow-md hover:shadow-lg' >
           
-                <img src={nw.image ? nw.image.url : '/images/event-default.png'} 
+                <img src={nw.image ? nw.image.url : '/images/news-default.png'} 
                 className='mb-4 rounded-t-lg'
                 width={600}
                 height={400}
